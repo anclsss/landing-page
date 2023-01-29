@@ -1,13 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  margin: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  min-height: 100wh;
+  flex-direction: column;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.logo {
+  margin-left: 165px;
+  display: block;
+}
+
+.nav-btn {
+  background-color: #13183f;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  border-radius: 28px;
+  width: 167px;
+  height: 56px;
+  margin-right: 165px;
+  border: none;
+}
+
+.nav-btn:hover {
+  background-color: #666ca3;
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+.heroSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 457px;
+  height: 359px;
+  margin-top: 185px;
+  margin-left: 165px;
+}
+
+.welcome h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 71px;
+  margin-bottom: 29px;
+}
+
+.welcome p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #83869a;
+  margin-bottom: 40px;
+}
+
+.welcome button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  width: 167px;
+  height: 63px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 31.5px;
+  border: none;
+}
+
+.welcome button:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  cursor: pointer;
+}
+
+/* hero images */
+
+.heroDesktop {
+  position: absolute;
+  width: 991.63px;
+  height: 936.92px;
+  left: 784px;
+  top: -146.13px;
+}
+
+.heroTablet {
+  display: none;
+}
+
+.heroMobile {
+  display: none;
+}
+
+/* MAIN CONTENT GRID */
+
+main {
+  padding: 250px 165px;
+  display: grid;
+  grid-template: auto auto / repeat(3, 1fr);
+  gap: 30px;
+  padding: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.accent-div {
+  width: 350px;
+  height: 322px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 15px;
+  border: none;
+}
+
+.accent-div h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 65px 32px;
+}
+
+.main-items {
+  width: 350px;
+  height: 322px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 30px;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  border-radius: 15px;
+}
+
+.main-items img {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+}
+
+.main-items h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #13183f;
+  margin-bottom: 20px;
+}
+
+.main-items h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #f74780;
+}
+
+.main-items h4:hover {
+  color: #ffa7c3;
+  cursor: pointer;
+}
+
+.main-items p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #83869a;
+  margin-bottom: 20px;
+  height: 112px;
+}
+
+footer {
+  background: #13183f;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoLight {
+  margin-left: 165px;
+}
+
+footer button {
+  background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  border-radius: 28px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  width: 167px;
+  height: 63px;
+  border: none;
+  margin-right: 165px;
+}
+
+footer button:hover {
+  cursor: pointer;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
 }

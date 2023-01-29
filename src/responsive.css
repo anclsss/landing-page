@@ -1,0 +1,138 @@
+/* responsive images
+    for testing purposes on my laptop
+    I am using different widths  */
+
+/* TABLET - (max-width: 768px)*/
+@media screen and (max-width: 1000px) {
+  .heroDesktop {
+    display: none;
+  }
+  .logo {
+    margin-left: 39px;
+  }
+  .nav-btn {
+    margin-right: 40px;
+    display: block;
+  }
+  .heroSection {
+    justify-content: flex-start;
+  }
+  .welcome {
+    width: 398px;
+    height: 284px;
+    padding: 0px;
+    margin-top: 100px;
+    margin-left: 39px;
+  }
+  .welcome h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .welcome p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+  .welcome button {
+    width: 167px;
+    height: 56px;
+  }
+  .heroTablet {
+    position: absolute;
+    display: block;
+    width: 640.71px;
+    height: 640px;
+    left: 425px;
+    top: -92.13px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  main {
+    grid-template: auto auto / repeat(2, 1fr);
+    padding: 40px;
+    margin-left: 0px;
+  }
+
+  footer {
+    padding: 0px;
+  }
+
+  .logoLight {
+    margin-left: 40px;
+  }
+  footer button {
+    margin-right: 39px;
+  }
+}
+
+/* MOBILE - (max-width: 375px) */
+
+@media screen and (max-width: 500px) {
+  .heroTablet {
+    display: none;
+  }
+  .heroDesktop {
+    display: none;
+  }
+  .heroMobile {
+    display: block;
+    width: 327px;
+    height: 301px;
+    margin-top: 40px;
+  }
+  .hero-image {
+    margin-bottom: -40px;
+  }
+  .logo {
+    margin-left: 16px;
+  }
+  .heroSection {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .welcome {
+    margin-top: 50px;
+    margin-left: -10px;
+    justify-content: flex-start;
+  }
+  main {
+    grid-template: auto auto / repeat(1, 1fr);
+    gap: 16px;
+    margin-left: -10px;
+  }
+  .accent-div {
+    width: 343px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .accent-div h2 {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 28px;
+  }
+}
+/* MOBILE
+  @media screen and (max-width: 375px) {
+    
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    * {
+      padding: 0px;
+      margin: 0;
+    }
+    .heroSection {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  */
